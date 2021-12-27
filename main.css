@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674baf;
+}
+
+.logo {
+  width: 100%;
+}
+.logo img {
+  width: 150px;
+  margin: 30px;
+}
+
+main .mockup {
+  margin-top: 20px;
+  text-align: center;
+}
+main .mockup img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 300px;
+}
+main .head .title {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 300px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+main .head p {
+  color: white;
+  text-align: center;
+  width: 330px;
+  font-family: "Poppins", sans-serif;
+  margin: 20px auto 0;
+}
+main .head .button {
+  text-align: center;
+  margin-top: 30px;
+}
+main .head .button button {
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  color: #674baf;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+main .head .button button:hover {
+  border: 1px white solid;
+  background-color: #674baf;
+  color: white;
+  cursor: pointer;
+}
+
+.social {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  gap: 20px;
+  color: white;
+}
+.social div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px white solid;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.social div:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #00252e;
+}
+
+@media (min-width: 618px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+  }
+}
+@media (min-width: 1300px) {
+  body {
+    background-size: contain;
+  }
+
+  main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  main .mockup img {
+    width: 700px;
+  }
+  main .head {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  main .head .title {
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+    width: 400px;
+  }
+  main .head p {
+    margin: 0;
+    text-align: left;
+    font-size: 0.8rem;
+    width: 400px;
+  }
+  main .head .button {
+    margin: 0;
+    text-align: left;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+  }
+}
